@@ -12,6 +12,7 @@ import Mobile3 from '../Assets/Mobile3.svg';
 import Footer from '../Components/Footer';
 import { ThemeProvider } from '@emotion/react';
 import Theme from '../Styles/Theme';
+import FooterImage from '../Assets/Footer_Background.svg';
 
 
 const HomePage = () => {
@@ -49,6 +50,7 @@ const HomePage = () => {
 
         <TwoColumnSectionLayout
             MobileImage={Mobile1}
+            direction="row"
             title="Create an account"
             heading="Create/login to an existing
                 account to get started"
@@ -58,6 +60,7 @@ const HomePage = () => {
 
         <TwoColumnSectionLayout
             MobileImage={Mobile2}
+            direction="row-reverse"
             title="Explore varieties"
             heading="Shop for your favorites
                 meal as e dey hot."
@@ -67,6 +70,7 @@ const HomePage = () => {
 
         <TwoColumnSectionLayout
             MobileImage={Mobile3}
+            direction="row"
             title="Checkout"
             heading="When you done check out
                 and get it delivered."
@@ -75,6 +79,7 @@ const HomePage = () => {
         />
 
         <ColumnSectionLayout
+            BackgroundImage={FooterImage}
             heading="Download the app now."
             subheading="Available on your favorite store. Start your premium experience now"
             radius="10px"

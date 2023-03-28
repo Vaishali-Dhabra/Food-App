@@ -1,17 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import { ThemeProvider } from '@emotion/react';
 import GlobalStyle from './Styles/GlobalStyle';
-import Home from './Pages/HomePage';
-import Product from './Pages/ProductPage';
-import Faq from './Pages/FaqPage';
-import Contact from './Pages/ContactPage';
-import PageNotFound from './Pages/PageNotFound';
+import Home from '../src/Pages/HomePage';
+import Product from '../src/Pages/ProductPage';
+import Faq from '../src/Pages/FaqPage';
+import Contact from '../src/Pages/ContactPage';
+import PageNotFound from '../src/Pages/PageNotFound';
+import Theme from '../src/Styles/Theme';
 
 
 const App = () => {
   return (
     <>
+      <ThemeProvider theme={Theme}>
         <GlobalStyle/>
         <BrowserRouter>
             <Routes>
@@ -23,6 +25,7 @@ const App = () => {
             <Route path="/*" element={<PageNotFound />} />
             </Routes>
         </BrowserRouter>
+      </ThemeProvider>
     </>
   )
 }

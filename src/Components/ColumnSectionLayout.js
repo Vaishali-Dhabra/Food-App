@@ -9,7 +9,7 @@ const ColumnSectionLayout = ({ title, heading, subheading,radius,BackgroundImage
     const btn_radius = radius;
   return (
     <>
-    <Box className='ColumnSectionLayoutCSS' sx={{backgroundImage:{BackgroundImage}}}>
+    <Box className='ColumnSectionLayoutCSS' sx={{background:`url(${BackgroundImage})`}}>
     <div className='TextContainer'>
       <InputText title={title} 
         heading={heading} 
