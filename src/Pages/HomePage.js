@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Components/Header';
+import HeroImage from '../Assets/HeroSection_Background.svg';
 import ColumnSectionLayout from '../Components/ColumnSectionLayout';
 import { Box } from '@mui/system';
 import Rectangle_Mobiles from '../Assets/Hero_Mobiles.svg';
@@ -9,15 +10,19 @@ import Mobile1 from '../Assets/Mobile1.svg';
 import Mobile2 from '../Assets/Mobile2.svg';
 import Mobile3 from '../Assets/Mobile3.svg';
 import Footer from '../Components/Footer';
+import { ThemeProvider } from '@emotion/react';
+import Theme from '../Styles/Theme';
 
 
 const HomePage = () => {
     return (
         <>
+        <ThemeProvider theme={Theme}>
         <Header/>
 
-        <ColumnSectionLayout
-            title="Food App"
+        <ColumnSectionLayout 
+            BackgroundImage={HeroImage}
+            title="Food App" 
             heading="Why stay hungry when 
             you can order form Bella Onojie"
             subheading="Download the bella onoje's food app now on"
@@ -27,7 +32,7 @@ const HomePage = () => {
         <Box
             sx={{
             display: "flex",
-            width: "60%",
+            width: "50%",
             marginInline: "auto",
             height: "820px",
             borderBottom: "1px solid grey",
@@ -77,6 +82,8 @@ const HomePage = () => {
 
         <Footer
         />
+        
+      </ThemeProvider>
         </>
     )
 }

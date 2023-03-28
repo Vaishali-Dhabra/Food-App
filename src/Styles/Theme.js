@@ -46,7 +46,7 @@ const Theme=createTheme({
             letterSpacing: 0.1,
         },
         button:{
-            textTransform:"capitalize"
+            textTransform:"capitalize",
         }
     }
 })

@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Theme from './CustomTheme/Theme';
-import { ThemeProvider } from '@emotion/react';
+
 import GlobalStyle from './Styles/GlobalStyle';
 import Home from './Pages/HomePage';
 import Product from './Pages/ProductPage';
@@ -13,7 +12,6 @@ import PageNotFound from './Pages/PageNotFound';
 const App = () => {
   return (
     <>
-      <ThemeProvider theme={Theme}>
         <GlobalStyle/>
         <BrowserRouter>
             <Routes>
@@ -25,7 +23,6 @@ const App = () => {
             <Route path="/*" element={<PageNotFound />} />
             </Routes>
         </BrowserRouter>
-      </ThemeProvider>
     </>
   )
 }

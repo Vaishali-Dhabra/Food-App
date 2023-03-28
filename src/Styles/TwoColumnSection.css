@@ -1,0 +1,19 @@
+.TwoColumnSectionLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.textcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.ImageSection{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
