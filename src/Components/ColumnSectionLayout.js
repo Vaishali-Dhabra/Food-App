@@ -10,11 +10,11 @@ const ColumnSectionLayout = ({ title,Heading,SubHeading,
   const btn_radius = radius;
   return (
     <>
-      <Box
+      <Box 
         className="ColumnSectionLayoutCSS"
-        sx={{ background: `url(${BackgroundImage})`,backgroundSize: 'cover' }}
+        sx={{ background: `url(${BackgroundImage})`,backgroundSize:"cover"  }}  
       >
-        <div className="TextContainer">
+        <div className="TextContainer" >
           <Typography variant="h5" color={"white"} >{title}</Typography>
           <Typography variant="h2"color={"white"} >{Heading}</Typography>
           <Typography varian="h4"color={"white"} >{SubHeading}</Typography>

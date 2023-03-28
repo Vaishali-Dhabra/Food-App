@@ -9,7 +9,7 @@ import '../Styles/Footer.css';
 
 const Footer = (FooterImage) => {
   return (
-    <Box className='footer' sx={{background:`url(${FooterImage})`}}>
+    <Box className='footer' sx={{background:`url(${FooterImage})`}} padding={3}>
         <div>
             <img src={Footer_Logo} alt=''/>
         </div>

@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .logo{
     margin-left: 90px;

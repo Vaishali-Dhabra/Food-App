@@ -23,7 +23,7 @@ const Buttons = ({buttonText,button_radius}) => {
     `;
   return (
     <>
-    <Buttons>
+    <Buttons >
       <Typography color="#ffffff">
         {buttonText}
       </Typography>
