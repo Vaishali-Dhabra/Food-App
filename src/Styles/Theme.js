@@ -17,6 +17,7 @@ const Theme=createTheme({
             fontsize: 58,
             textalign: 'center',
             letterspacing: 0.2,
+            color:"#ffffff"
         },
         h2:{
             fontfamily: 'Montserrat',
@@ -47,6 +48,7 @@ const Theme=createTheme({
         },
         button:{
             textTransform:"capitalize",
+            border:"white",
         }
     }
 })

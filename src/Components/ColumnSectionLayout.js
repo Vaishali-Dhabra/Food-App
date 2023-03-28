@@ -1,29 +1,32 @@
-import React from 'react';
-import InputText from '../Components/InputText';
-import Buttons from './Buttons';
-import '../Styles/ColumnSectionLayout.css';
-import { Box } from '@mui/material'; 
-import { red } from '@mui/material/colors';
+import React from "react";
+import Buttons from "./Buttons";
+import "../Styles/ColumnSectionLayout.css";
+import { Box, Typography } from "@mui/material";
 
-const ColumnSectionLayout = ({ title, heading, subheading,radius,BackgroundImage}) => {
-    const btn_radius = radius;
+const ColumnSectionLayout = ({ title,Heading,SubHeading,
+  radius,
+  BackgroundImage,
+}) => {
+  const btn_radius = radius;
   return (
     <>
-    <Box className='ColumnSectionLayoutCSS' sx={{background:`url(${BackgroundImage})`}}>
-    <div className='TextContainer'>
-      <InputText title={title} 
-        heading={heading} 
-        subheading={subheading} 
-      />
-    </div>
+      <Box
+        className="ColumnSectionLayoutCSS"
+        sx={{ background: `url(${BackgroundImage})`,backgroundSize: 'cover' }}
+      >
+        <div className="TextContainer">
+          <Typography variant="h5" color={"white"} >{title}</Typography>
+          <Typography variant="h2"color={"white"} >{Heading}</Typography>
+          <Typography varian="h4"color={"white"} >{SubHeading}</Typography>
+        </div>
 
-    <div className='ButtonsContainer'>
-      <Buttons buttonText="Playstore" button_radius={btn_radius} />
-      <Buttons buttonText="App store" button_radius={btn_radius} />
-    </div>
-    </Box>
+        <div className="ButtonsContainer" >
+          <Buttons buttonText="Playstore" button_radius={btn_radius} />
+          <Buttons buttonText="App store" button_radius={btn_radius} />
+        </div>
+      </Box>
     </>
-  )
-}
+  );
+};
 
 export default ColumnSectionLayout;

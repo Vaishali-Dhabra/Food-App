@@ -24,9 +24,9 @@ const HomePage = () => {
         <ColumnSectionLayout 
             BackgroundImage={HeroImage}
             title="Food App" 
-            heading="Why stay hungry when 
+            Heading="Why stay hungry when 
             you can order form Bella Onojie"
-            subheading="Download the bella onoje's food app now on"
+            SubHeading="Download the bella onoje's food app now on"
             radius="30px"
         />
 
@@ -37,7 +37,6 @@ const HomePage = () => {
             marginInline: "auto",
             height: "820px",
             borderBottom: "1px solid grey",
-            marginTop: "-30",
             backgroundImage: `url(${Rectangle_Mobiles})`,
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
@@ -80,15 +79,13 @@ const HomePage = () => {
 
         <ColumnSectionLayout
             BackgroundImage={FooterImage}
-            heading="Download the app now."
-            subheading="Available on your favorite store. Start your premium experience now"
+            Heading="Download the app now."
+            SubHeading="Available on your favorite store. Start your premium experience now"
             radius="10px"
         />
 
-        <Footer
-        />
-        
-      </ThemeProvider>
+        <Footer/>
+        </ThemeProvider>
         </>
     )
 }
